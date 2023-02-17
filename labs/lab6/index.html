@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab6</title>
+    <style>
+        .container{
+            width: 100vw;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="ViewTrash()">Корзина</button>
+    <button onclick="setGray()">Установить серый</button>
+    <div style="display:flex; flex-direction:column; align-items: center; width: 100vw;">
+        <form style="display:flex; flex-direction:column;">
+            <input type="file" name="file"/>
+            <input type="text" name="title"/>
+            <input type="text" name="price"/>
+        </form>
+        <button onclick="AddProduct()">Добавить</button>
+    </div>
+    <div class="container"></div>
+    <script src="./js.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>lab08</title>
+</head>
+<body>
+    <div class="Forms-Container">
+        <div style="width: 90%; display: flex; align-items: center; justify-content: space-evenly; align-items: flex-start;">
+            <div class="Forms-Container__Button Forms-Container__Button__Active" value="Auth" title="Вкладка авторизации"><img src="./auth.png" style="width: 20px;">Авторизация</div>
+            <div class="Forms-Container__Button" value="Reg" title="Вкладка регистрации"><img src="./reg.png" style="width: 20px;">Регистрация</div>
+        </div>
+        <form class="Form Form-Auth">
+            <div class="Form__Container-Input-Text">
+                <input type="text" required name="login" class="Form__Input-Text">
+                <div class="Form__Placeholder-Input-Text">Введите почту</div>
+            </div>
+            <div class="Form__Container-Input-Text">
+                <input type="password" required name="password" class="Form__Input-Text">
+                <div class="Form__Placeholder-Input-Text">Введите пароль</div>
+            </div>
+            <label class="Form__Button">
+                <div style="width: 100%; height:100%; display:flex; align-items:center; justify-content:center; position: relative; z-index: 2;">Войти</div>
+                <div class="Form__Button-BackgroundTwo"></div>
+                <div class="Form__Button-BackgroundOne"></div>
+                <input type="submit" required hidden ></input>
+            </label>
+          
+        </form>
+        <form class="Form Form-Reg">
+            <div class="Form__Container-Input-Text">
+                <input type="text" required name="lastname" class="Form__Input-Text">
+                <div class="Form__Placeholder-Input-Text">Введите фамилию</div>
+            </div>
+            <div class="Form__Container-Input-Text">
+                <input type="text" required name="name" class="Form__Input-Text">
+                <div class="Form__Placeholder-Input-Text">Введите имя</div>
+            </div>
+            <input type="date" required name="birthday" class="Form__Container-Input-Date" id="datetime-local">
+            <div class="Form__Container-Input-Text">
+                <input type="text" required name="login" class="Form__Input-Text">
+                <div class="Form__Placeholder-Input-Text">Введите почту</div>
+            </div>
+            <div class="Form__Container-Input-Text">
+                <input type="password" required name="password" class="Form__Input-Text">
+                <div class="Form__Placeholder-Input-Text">Введите пароль</div>
+            </div>
+            <label class="Form__Button">
+                <div style="width: 100%; height:100%; display:flex; align-items:center; justify-content:center; position: relative; z-index: 2;">Зарегистрироваться</div>
+                <div class="Form__Button-BackgroundTwo"></div>
+                <div class="Form__Button-BackgroundOne"></div>
+                <button hidden></button>
+            </label>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

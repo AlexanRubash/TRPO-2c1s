@@ -1,0 +1,146 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.Forms-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #036da2;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 25%;
+    padding: 20px;
+    height: 60%;
+}
+
+.Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white;
+    width: 90%;
+    height: 80%;
+}
+
+.Form-Reg{
+    display: none;
+    height: 100%;
+}
+
+.Form__Container-Input-Date{
+    border: none;
+    outline:none;
+    color:#036da2;
+    font-family: Roboto;
+    font-weight: 400;
+    width: 67%;
+    padding: 5px;
+    border-bottom: 1px #036da2 solid;
+}
+
+.Form__Container-Input-Text{
+    width: 70%;
+    height: 10%;
+    font-size: 10pt;
+    font-weight: 400;
+}
+
+.Form__Placeholder-Input-Text{
+    position: relative;
+    top: -25px;
+    left: 3px;
+    z-index: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.Form__Input-Text{
+    position: relative;
+    background: transparent;
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px #036da2 solid;
+    z-index: 1;
+    caret-color: #00aaff;
+    color:#036da2;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+.Form__Input-Text:focus + .Form__Placeholder-Input-Text, .Form__Input-Text:valid + .Form__Placeholder-Input-Text{
+    transform: translateY(-20px);
+    color: #00aaff;
+    font-size: 9pt;
+}
+
+.Form__Button{
+    position: relative;
+    width: 70%;
+    height: 40px;
+    font-size: 14pt;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: #0582c1;
+    text-align: center;
+    overflow: hidden;
+}
+
+.Form__Button:hover .Form__Button-BackgroundOne {
+    transform: translateY(-200%) translateX(0%);
+}
+
+.Form__Button:hover .Form__Button-BackgroundTwo{
+    transform: translateY(-100%);
+}
+
+
+
+.Form__Button-BackgroundOne{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-200%) translateX(-100%);
+    background-color: #0598e1; 
+    z-index: 0;   
+    transition: 0.3s ease-in-out;
+}
+
+.Form__Button-BackgroundTwo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-10%);
+    background-color: #00aaff; 
+    z-index: 1;   
+    transition: 0.3s ease-in-out;
+    transition-delay: 0.2s;
+}
+
+
+.Forms-Container__Button{
+    padding: 10px;
+    background: transparent; 
+    width: 50%; 
+    text-align: center; 
+    cursor: pointer;
+}
+
+.Forms-Container__Button img{
+    transform: translateY(3px) translateX(-5px);
+}
+
+.Forms-Container__Button__Active{
+    background-color: white;
+}
